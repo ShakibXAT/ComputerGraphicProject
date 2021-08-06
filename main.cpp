@@ -36,6 +36,13 @@ glClear (GL_COLOR_BUFFER_BIT);
     glVertex3f(4.0f, 2.0f, 0.0f);
     glVertex3f(0.5f, 2.f, 0.0f);
 
+    //under the wall
+     glColor3f (.59, 0.49, .14);
+    glVertex3f(.0f, -.3f, 0.0f);
+    glVertex3f(4.5f, -.3f, 0.0f);
+    glVertex3f(4.0f, .1f, 0.0f);
+    glVertex3f(0.5f, .1f, 0.0f);
+
     //Shade of the first House
     glColor3f (.95, 0.63, .13);
     glVertex3f(0.0f, 2.0f, 0.0f);
@@ -71,9 +78,101 @@ glClear (GL_COLOR_BUFFER_BIT);
     glVertex3f(2.5f, 4.5f, 0.0f);
     glVertex3f(2.f, 4.5f, 0.0f);
 
+    //River
+    glColor3f (.13, 0.86, .94);
+    glVertex3f(-2.f, -15.0f, 0.0f);
+    glVertex3f(20.f, -15.f, 0.0f);
+    glVertex3f(20.f, -5.0f, 0.0f);
+    glVertex3f(-2.f, -5.f, 0.0f);
+
+
+
     glEnd();
 
-    //for tree
+    //second house
+    glBegin(GL_QUADS);
+    //first wall
+    glColor3f (.0, 0.46, .41);
+    glVertex3f(7.5f, 0.1f, 0.0f);
+    glVertex3f(9.f, 0.1f, 0.0f);
+    glVertex3f(9.0f, 2.5f, 0.0f);
+    glVertex3f(7.5f, 2.5f, 0.0f);
+
+    //2nd wall
+    glColor3f (.5, 0.0, .5);
+    glVertex3f(9.f, 0.1f, 0.0f);
+    glVertex3f(13.f, 0.1f, 0.0f);
+    glVertex3f(13.0f, 2.5f, 0.0f);
+    glVertex3f(9.f, 2.5f, 0.0f);
+
+    //shade
+    glColor3f (.86, 0.44, .58);
+    glVertex3f(9.5f, 2.3f, 0.0f);
+    glVertex3f(13.5f, 2.3f, 0.0f);
+    glVertex3f(12.5f, 4.f, 0.0f);
+    glVertex3f(8.5f, 4.f, 0.0f);
+
+    //Under the first wall
+    glColor3f (.9, 0.74, .04);
+    glVertex3f(7.f, -.3f, 0.0f);
+    glVertex3f(9.2f, -.3f, 0.0f);
+    glVertex3f(9.f, .1f, 0.0f);
+    glVertex3f(7.5f, .1f, 0.0f);
+
+    //Under the second wall
+    glColor3f (1., 0.8, .1);
+    glVertex3f(9.2f, -.3f, 0.0f);
+    glVertex3f(13.5f, -.3f, 0.0f);
+    glVertex3f(13.f, .1f, 0.0f);
+    glVertex3f(9.f, .1f, 0.0f);
+
+    //first window
+    glColor3f (.86, .62, .86);
+    glVertex3f(8.f, 1.f, 0.0f);
+    glVertex3f(8.5f, 1.f, 0.0f);
+    glVertex3f(8.5f, 1.5f, 0.0f);
+    glVertex3f(8.f, 1.5f, 0.0f);
+
+    //2nd window
+    glColor3f (.86, .62, .86);
+    glVertex3f(9.5f, 1.f, 0.0f);
+    glVertex3f(10.f, 1.f, 0.0f);
+    glVertex3f(10.f, 1.5f, 0.0f);
+    glVertex3f(9.5f, 1.5f, 0.0f);
+
+    //3rd Window
+
+       glColor3f (.86, .62, .86);
+    glVertex3f(12.f, 1.f, 0.0f);
+    glVertex3f(12.5f, 1.f, 0.0f);
+    glVertex3f(12.5f, 1.5f, 0.0f);
+    glVertex3f(12.f, 1.5f, 0.0f);
+
+    //dor
+    glColor3f (0., .5, .5);
+    glVertex3f(10.5f, .1f, 0.0f);
+    glVertex3f(11.5f, .1f, 0.0f);
+    glVertex3f(11.5f, 1.5f, 0.0f);
+    glVertex3f(10.5f, 1.5f, 0.0f);
+
+
+    glEnd();
+
+
+
+    glBegin(GL_TRIANGLES);
+
+    glColor3f (0.0, 0.46, .70);
+    glVertex3f(7.f, 2.3f, 0.0f);
+    glVertex3f(9.5f, 2.3f, 0.0f);
+    glVertex3f(8.5f, 4.0f, 0.0f);
+
+    glEnd();
+
+
+
+
+    //for leaf of the tree
     glBegin(GL_POLYGON);
     float theta;
     int i;
